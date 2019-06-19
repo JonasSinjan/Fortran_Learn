@@ -1,9 +1,10 @@
 program fortran_play
     implicit none !declare all variables
     
-    character*20 :: name
-    print *,"What's your name "
-    read *, name
-    print *, "Hello ", name
+    !character*20 :: name
+    character (len = 20) :: f_name, l_name
+    print *, "What's your name? "
+    read *, f_name, l_name
+    print *, "Hello ", trim(f_name), " ", trim(l_name)
 
 end program fortran_play
